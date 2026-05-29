@@ -1,0 +1,91 @@
+/* ========== 基本窗口背景与字体 ========== */
+QMainWindow {
+    background-color: #f4f7fa;
+    font-family: "微软雅黑", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+/* ========== 标题标签 ========== */
+QLabel#TitleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004080;
+}
+
+/* ========== 图像区域 QLabel 默认黑色背景 ========== */
+QLabel {
+    background-color: #111;
+    border: 1px solid #ccc;
+}
+
+/* ========== 按钮统一风格 ========== */
+QPushButton {
+    background-color: #0078d4;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    min-width: 250px;
+    max-width: 250px;
+}
+QPushButton:hover {
+    background-color: #005a9e;
+}
+QPushButton:pressed {
+    background-color: #003f73;
+}
+
+/* ========== 标签页 ========== */
+QTabWidget::pane {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #ffffff;
+}
+QTabBar::tab {
+    background: #dde7f1;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background: #0078d4;
+    color: white;
+}
+
+/* ========== 文本输入/输出框 ========== */
+QTextEdit, QLineEdit, QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* ========== 进度条 ========== */
+QProgressBar {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    height: 20px;
+}
+QProgressBar::chunk {
+    background-color: #28a745;
+    width: 20px;
+}
+
+/* ========== 滚动条 ========== */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 10px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #aaa;
+    border-radius: 5px;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+}
